@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "loupe@example.com": {
+      "updates": [
+        {
+          "version": "0.1.0",
+          "update_link": "https://github.com/softmix/loupe/releases/download/0.1.0/loupe.xpi"
+        }
+      ]
+    }
+  }
+}
