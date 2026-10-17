@@ -1,0 +1,37 @@
+{
+  "name": "loupe",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Notices Stable Diffusion prompts (A1111, ComfyUI) embedded in images as pages load them.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "notifications",
+    "downloads",
+    "storage"
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg"
+  },
+  "browser_action": {
+    "default_icon": "icon.svg",
+    "default_title": "loupe — images with prompts"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "loupe@example.com",
+      "strict_min_version": "142.0",
+      "update_url": "https://raw.githubusercontent.com/softmix/loupe/master/updates.json",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
+    }
+  }
+}

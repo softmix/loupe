@@ -1,0 +1,16 @@
+{
+  "name": "loupe",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test.js",
+    "dev": "web-ext run",
+    "sign": "npm run clean && web-ext sign --channel=unlisted",
+    "release": "node release.mjs",
+    "build": "npm run clean && web-ext build",
+    "clean": "node -e \"require('fs').rmSync('web-ext-artifacts',{recursive:true,force:true})\""
+  },
+  "devDependencies": {
+    "web-ext": "^10.6.0"
+  }
+}
